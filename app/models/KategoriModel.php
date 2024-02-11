@@ -34,7 +34,6 @@ class KategoriModel{
 		$this->db->bind('id',$data['id']);
 		$this->db->bind('nama_kategori',$data['nama_kategori']);
 		$this->db->execute();
-
 		return $this->db->rowCount();
 	}
 	public function deleteKategori($id)
